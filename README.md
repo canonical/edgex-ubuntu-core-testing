@@ -1,8 +1,8 @@
-# Ubuntu Core EdgeX Image Testing
+# EdgeX Ubuntu Core Testing
 
-This folder contains scripts for creating an Ubuntu Core OS image, which includes the necessary EdgeX components. The image is designed for testing purposes, and the scripts automate the process of building, booting, and testing the image. 
+This repo contains scripts for creating an Ubuntu Core OS image, which includes the necessary EdgeX components. The image is designed for testing purposes, and the scripts automate the process of building, booting, and testing the image. 
 
-For details of creating a Ubuntu Core image with EdgeX, please refer to the documentation provided [here](https://docs.edgexfoundry.org/2.3/examples/Ch-OSImageWithEdgeX/#a-create-an-image-with-edgex-components).
+For details of creating a Ubuntu Core image with EdgeX, please refer to the documentation provided [here](https://docs.edgexfoundry.org/3.0/examples/Ch-OSImageWithEdgeX/#a-create-an-image-with-edgex-components).
 
 ### Requirements
 Before running the tests, you need to install the following packages:
