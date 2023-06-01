@@ -3,7 +3,7 @@
 # Remove the pc-gadget directory if it already exists
 rm -rf pc-gadget
 
-git clone https://github.com/snapcore/pc-gadget.git
+git clone https://github.com/snapcore/pc-gadget.git --branch=22
 cd pc-gadget
 
 # Temporary fix: Use the last compatible commit of the pc-gadget repository to avoid installation failures
