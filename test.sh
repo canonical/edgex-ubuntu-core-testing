@@ -1,11 +1,11 @@
 #!/bin/bash -ex
 
-if [[ -z "$USER" ]]; then
-  echo "Required input 'USER' is unset. Exiting..."
+if [[ -z "$UBUNTU_USER" ]]; then
+  echo "Required input 'UBUNTU_USER' is unset. Exiting..."
   exit 1
 fi
 
-SSH_USER="$USER"
+SSH_USER="$UBUNTU_USER"
 SSH_PORT="8022"
 remote_call() {
   ssh "$SSH_USER@localhost" -p $SSH_PORT "$@"

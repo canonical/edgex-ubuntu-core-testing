@@ -52,7 +52,7 @@ To boot the Ubuntu Core image with EdgeX components in an emulator:
 Once you see the SSH command and the IP address, open a new terminal to test the image by running:
 
 ```
-$ USER=<your-username> ./test.sh
+$ UBUNTU_USER=<your-username> ./test.sh
 + [[ -z <your-username> ]]
 + SSH_USER=<your-username>
 + SSH_PORT=8022

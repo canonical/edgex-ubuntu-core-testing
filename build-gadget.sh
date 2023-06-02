@@ -2,10 +2,13 @@
 
 # Remove the pc-gadget directory if it already exists
 rm -rf pc-gadget
-git clone https://github.com/snapcore/pc-gadget.git --branch=22 --depth 1 
 
-# Build gadget snap
+git clone https://github.com/snapcore/pc-gadget.git --branch=22
 cd pc-gadget
+
+# Temporary fix: Use the last compatible commit of the pc-gadget repository to avoid installation failures
+# Please see issue for more detaiils: https://github.com/canonical/edgex-ubuntu-core-testing/issues/1
+git checkout 1779b0de4e022ddcbefd782e0523ee9c0c7f1dea
 
 # Extend the size of disk partitions to have sufficient capacity for EdgeX snaps
 yq e -i '(.volumes.pc.structure[] | select(.name=="ubuntu-seed") | .size)="1500M"' gadget.yaml
